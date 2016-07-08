@@ -1,0 +1,259 @@
+.shop_menu{
+    display:inline-block;
+    position:relative;
+    float:left;
+    width:200px;
+    width:25%;
+
+}
+
+.shop_menu ul{
+    list-style-type: none;
+}
+.shop_menu ul li{
+    margin-top:4px;
+    margin-bottom: 4px;
+    padding:8px;
+    font-size:16px;
+    text-align:center;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    -webkit-box-shadow: 0px 2px 1px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 2px 1px 0px rgba(0,0,0,1);
+    box-shadow: 0px 2px 1px 0px rgba(0,0,0,1);
+    background:#111;
+
+}
+.shop_main_li{
+    font-size:18px;
+    font-weight:bold;
+    -webkit-box-shadow: 0px 2px 3px 1px rgba(0,0,0,1) !important;;
+    -moz-box-shadow: 0px 2px 3px 1px rgba(0,0,0,1) !important;;
+    box-shadow:  0px 1px 2px 1px rgba(0,0,0,1) !important;
+
+}
+.shop_menu ul li a{
+    text-decoration: none;
+}
+.active_option a{
+    color:#fff;
+}
+.inactive_option a{
+    color:#CCC;
+}
+.shop_items_container{
+
+
+}
+.item_row{
+    position:relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+
+    margin-top:10px;
+    margin-bottom:10px;
+    //height:230px;
+}
+
+.item_container{
+    vertical-align: middle;
+    display:inline-block;
+    width:200px;
+    height:250px;
+    cursor:pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top:15px;
+    margin-bottom:0px;
+    background: #EEE;
+}
+.item_container:hover, .item_container:focus, .item_container:active {
+
+}
+.item_container:first-child{
+    margin-left: 10px;
+}
+.item_container:last-child{
+    margin-right: 10px;
+}
+.item_title{
+    margin-top:10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight:bold;
+    color:#333;
+}
+
+.item_image{
+    z-index:3;
+    padding:10px;
+    height: 160px;
+    line-height: 160px;
+    text-align:center;
+}
+.item_image img{
+
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+    margin:auto;
+}
+.item_price{
+    text-align:center;
+    padding-right:10px;
+    color:#333;
+    font-weight:bold;
+    margin-top:5px;
+    margin-left:5px;
+    font-size: 15px;
+}
+.item_row_t{
+
+    width:100%;
+}
+
+.item_number_container{
+    width: 25px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #AAA;
+    outline:0;
+    font-weight: bold;
+    color:#CCC;
+    font-size: 12px;
+    text-align: center;
+}
+#no_items_message{
+    text-align: center;
+}
+.item_type{
+    font-size:22px;
+    padding:6px;
+    text-align:center;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-style: normal;
+
+    font-weight: bold;
+    margin-top:20px;
+    margin-bottom:20px;
+    text-shadow: 1px 1px 0px rgba(113, 115, 117, 1);
+    color:#333;
+
+
+}
+.shop_button {
+    cursor: pointer;
+    display: inline-block;
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    text-shadow: 1px 1px 3px #545454;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 16px;
+    background: #e6e6e6;
+    padding: 8px 16px 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+
+}
+
+.shop_button:hover {
+    background: #b5b5b5;
+    text-decoration: none;
+}
+
+.hvr-bounce-in {
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/* Bounce Out */
+.hvr-bounce-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.hvr-bounce-out:hover, .hvr-bounce-out:focus, .hvr-bounce-out:active {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.hvr-float {
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+}
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #CCC;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}

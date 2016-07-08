@@ -1,0 +1,50 @@
+#option_form{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding:5px;
+    text-align: right;
+    font-size:16px;
+    text-transform: full-width;
+}
+#refresh_option{
+    margin-left: 20px;
+}
+.radio{
+    display: inline-block;
+    font-style: italic;
+}
+.search_post_container{
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    margin-top:15px;
+    margin-bottom:15px;
+    padding:15px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    border: 1px solid #444;
+    border-bottom: 1px solid #444;
+    background: #EEE;
+}
+.search_post_container .global_button{
+    padding:4px 8px 4px 8px;
+
+}
+.search_post_button{
+    margin-left: auto;
+}
+.search_post_title{
+    display: inline-block;
+    font-size:16px;
+    font-weight: bold;
+    width:400px;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+.search_post_date, .search_post_price{
+    margin-left: auto;
+    display: inline-block;
+    font-size:12px;
+    font-style: italic;;
+}

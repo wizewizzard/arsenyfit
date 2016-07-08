@@ -1,0 +1,110 @@
+#gallery_content{
+    position:relative;
+}
+#gallery_table,
+#gallery_table tr,
+#gallery_table tbody td,
+#gallery_table thead th,
+#gallery_table tfoot th {
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+#gallery_table{
+    position:relative;
+    border-collapse:collapse;
+    border-spacing: 0;
+    border:none;
+}
+#gallery_table tr{
+    height:200px;
+}
+#gallery_table td{
+    padding:10px;
+    margin:0px;
+    height: 200px;
+    width: 200px;
+    text-align:center;
+    font-size: 0;
+}
+#gallery_table td img{
+    max-height:100%;
+    max-width:100%;
+    height:auto;
+    -webkit-box-shadow: 0px 0px 4px 2px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 4px 2px rgba(255,255,255,1);
+    box-shadow: 0px 0px 4px 2px rgba(255,255,255,1);
+}
+
+#gallery_paginator{
+    height:20px;
+    text-align:center;
+}
+#gallery_paginator ul{
+    list-style-type: none;
+}
+#gallery_paginator ul li{
+    display: inline;
+    margin-left: 3px;
+    margin-right:3px;
+    font-size: 14px;
+    vertical-align: top;
+}
+#gallery_paginator ul a{
+    text-decoration: none;
+display: inline-block;
+
+}
+#gallery_paginator .paginator_page{
+
+}
+.paginator_active_page{
+    line-height: 23px;
+
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 16px !important;
+}
+#gallery_row{
+    position:relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+.row_image{
+    vertical-align: middle;
+
+    display:inline-block;
+    cursor:pointer;
+    white-space: nowrap;
+    height:300px;
+}
+.row_image a{
+
+    display:block;
+    text-align:center;
+    line-height: 300px;
+    height:300px;
+
+}
+.row_image a img{
+
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+    margin:auto;
+}
+.global_button{
+    padding: 1px 1px 1px 1px !important;
+    font-family: Impact, Charcoal, sans-serif !important;
+    font-weight: normal !important;
+    font-size:16px;
+}
+.txt_page{
+    //font-family: Times New Roman, sans-serif !important;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 0.2px;
+}

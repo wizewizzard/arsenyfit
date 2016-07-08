@@ -1,0 +1,44 @@
+#post_container{
+    background:white;
+    padding:20px;
+}
+#edit_delete_post_container{
+    text-align: right;
+    margin-bottom: 10px;
+}
+#edit_post{
+    height:20px;
+    display: inline-block;
+    line-height:20px;
+}
+#edit_post  img{
+    margin-right:4px;
+    max-height:100%;
+    max-width:100%;
+}
+#edit_post a{
+    margin-right:4px;
+    vertical-align:top;
+    font-style: italic;
+    color:#666;
+    font-weight: bold;
+    text-decoration: none;
+}
+#delete_post{
+    height:20px;
+    display: inline-block;
+    line-height:20px;
+}
+#delete_post  img{
+    margin-right:4px;
+    max-height:100%;
+    max-width:100%;
+}
+#delete_post a{
+    margin-right:4px;
+    vertical-align:top;
+    font-style: italic;
+    color:#666;
+    font-weight: bold;
+    text-decoration: none;
+}

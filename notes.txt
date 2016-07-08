@@ -1,0 +1,72 @@
+Сделать в админке просмотр данных о заказе(доставк и итемы)
+Добавить платежки
+Добавить комменты вк
+Добавить фолловеры
+Сделать зхорошую админку
+Сделать контроль доступа
+Разобраться со сдвигом по времени
+добавить хранение файлов пдф программ
+
+---from site/index
+<?php foreach($models as $model) { ?>
+<article>
+    <h3><?= CHtml::link($model->title, array('post/view',
+            'id'=>$model->id)) ?></h3><div class="post_date">Posted on <?= date_format(date_create($model->date), 'd m, Y'); ?></div>
+    <div class ="post_preview"><?= $model->preview ?></div>
+    <?php $splitted_tags = preg_split("/[\s,]+/", $model->tags);
+    //print_r($splitted_tags);
+    ?>
+    <div class="tags"><?php foreach($splitted_tags as $tag) {
+            echo CHtml::link($tag, Yii::app()->createUrl('post/search', array('searchString' => $tag))) . ' ';
+        }
+        ?>
+</article>
+<?php } ?>
+
+---fro item form
+
+<p>Дополнительные параметры</p>
+	<div class="row">
+		Использовать цвета
+		<?php echo CHtml::activeCheckBox($model,'colors_active',
+			array(
+			'checked'=>($model->colors_active==true)?true:false)); ?>
+		<div id="color_pickers_container">
+			<?php
+			$colors = $model->getColorsArray();
+			$i=0;
+			foreach($colors as $color){
+				if(strlen($color) <= 0) break;?>
+				<div class="color_picker" id="color<?= $i ?>" >
+					<input type="text" maxlength="6" size="6" name="colorpickerField<?= $i ?>" id="colorpickerField<?= $i ?>" value="<?= $color ?>">
+					<div class="color_div" style="width: 20px; height: 20px; background: #<?= $color ?>"></div>
+					<div class="remove_color" data-id-color="<?= $i ?>">Remove</div>
+				</div>
+			<?php $i++; }
+			?>
+
+		</div>
+
+	</div>
+
+--gallery/index
+<table id="gallery_table">
+    <?php
+    //conf section
+    $ih=Yii::app()->config->get('IMAGES.HORIZNUM_GALLERYPAGE');//сколько картинок по горизонтали
+    $iv=Yii::app()->config->get('IMAGES.VERTNUM_GALLERYPAGE');//сколько картинок по вертикали
+    $c=0;
+    foreach($images as $image){
+        if($c%$ih==0){ $c=0; ?> <tr><?php ;}
+        ?>
+        <td>
+            <a href ="<?= Yii::app()->request->baseUrl.'/images/gallery/original/'.$image->img_name?>">
+                <?= CHtml::image(Yii::app()->request->baseUrl.'/images/gallery/thumbnails/'.$image->img_name); ?>
+            </a>
+        </td>
+        <?php
+        $c++;
+        if($c%$ih==0){ ?> </tr><?php ;}
+    }
+    ?>
+</table>
